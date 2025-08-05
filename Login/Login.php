@@ -7,6 +7,7 @@
     <title>SignaFo Login</title>
     <link rel="stylesheet" href="Login.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -28,8 +29,14 @@
             </div>
 
             <div class="role-toggle">
-                <button class="role-button active" id="studentBtn">Student</button>
-                <button class="role-button" id="adminBtn">Admin</button>
+                <button class="role-button active" id="studentBtn">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Student
+                </button>
+                <button class="role-button" id="adminBtn">
+                    <i class="fa-solid fa-shield"></i>
+                    Admin
+                </button>
             </div>
 
             <form id="loginForm" action="Process.php" method="POST">
@@ -47,4 +54,5 @@
     </div>
     <script src="Login.js"></script>
 </body>
+
 </html>
